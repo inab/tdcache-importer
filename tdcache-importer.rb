@@ -17,7 +17,7 @@ Bundler.setup
 class TD_Cache_Importer
   def initialize
     begin
-      @DB = Sequel.connect(:adapter=>'mysql', :host=>'localhost', :database=>'tdcache', :user=>'')    
+      @DB = Sequel.connect(:adapter=>'mysql', :host=>'localhost', :database=>'tdcache', :user=>'root')    
       @dc = Dalli::Client.new('localhost:11211')
     rescue Mysql::Error => e_db
       print "Couldn't initiate importer: #{e_db.message}\n"

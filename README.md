@@ -15,11 +15,9 @@ By default, the database server should be Mysql; the database name is default to
 
 # Usage
 First, you must type
-
-  $ bundle install
+			 $ bundle install
 
 from the command line in order to build up the dependencies (gems). Then, just type: 
-	
-  $ ruby tdcache-importer.rb 
+		 $ ruby tdcache-importer.rb 
 
 to perform the import.
